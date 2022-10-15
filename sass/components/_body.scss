@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $body-font ;
+    letter-spacing: 0.03em;
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+}

@@ -1,0 +1,24 @@
+.hero-content {
+    width: 1600px;
+    background-color: $content-background-color;
+    background-image: $hero-linear-gradient;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0px 200px;
+    margin: auto;
+    text-align: center;
+
+
+&__headline {
+    width: 696px;
+    font-weight: $font-wh-black;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 30px;
+    color: $hero-headline-color;
+    }
+}

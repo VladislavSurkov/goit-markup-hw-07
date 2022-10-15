@@ -9,7 +9,6 @@
   --accent-color: #2196f3;
   --hero-headline-color: #ffffff;
   --footer-contact: rgba(255, 255, 255, 0.6);
-  --content-background-color: #2f303a;
   --second-section-background-color: #f5f4fa;
   --team-item-background: #ffffff;
   --icon-color: #afb1b8;
@@ -76,7 +75,7 @@ body {
 }
 /*--------------------------- menu nav ---------------------------------*/
 
-.header-content__menu-nav {
+.menu-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -132,7 +131,7 @@ body {
 
 /*--------------------------- header contacts --------------------------*/
 
-.header-content__header-contacts {
+.header-contacts {
   display: flex;
   margin-left: auto;
 }
@@ -155,7 +154,7 @@ body {
   color: var(--accent-color);
 }
 
-.header-contacts__item-icon {
+.header-contacts__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
   transition-property: fill;
@@ -163,8 +162,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts__contact:hover .header-contacts__item-icon,
-.header-contacts__contact:focus .header-contacts__item-icon {
+.header-contacts__contact:hover .header-contacts__icon,
+.header-contacts__contact:focus .header-contacts__icon {
   fill: var(--accent-color);
 }
 
@@ -204,7 +203,7 @@ body {
   border: 0;
   border-radius: 4px;
 }
-.hero-content__btn {
+.button__hero-content {
   display: inline-block;
   min-width: 216px;
   font-weight: 700;
@@ -215,15 +214,15 @@ body {
   padding: 10px 34px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.primary {
+.button--primary {
   background-color: var(--accent-color);
   color: var(--hero-headline-color);
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.primary:focus,
-.primary:hover {
+.button--primary:focus,
+.button--primary:hover {
   color: var(--title-text-color);
   background-color: var(--team-background-color);
 }
@@ -548,7 +547,7 @@ body {
 .footer-form__input:focus {
   border-color: var(--accent-color);
 }
-.footer-form__btn {
+.footer-form__button {
   display: flex;
   font-style: normal;
   font-weight: 700;
@@ -568,36 +567,36 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-form__btn:hover .footer-form__icon,
-.footer-form__btn:focus .footer-form__icon {
+.footer-form__button:hover .footer-form__icon,
+.footer-form__button:focus .footer-form__icon {
   fill: var(--header-logo-color);
 }
 
 /*--------------------------- portfolio --------------------------------*/
 
 /*--------------------------- buttons ----------------------------------*/
-.section__items-button {
+.portfolio-filtres {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.section__button {
+.portfolio-filtres__button {
   font-weight: 500;
   font-size: 16px;
   min-width: 73px;
   padding: 6px 22px;
   line-height: 1.6;
 }
-.secondary {
+.button--secondary {
   background-color: var(--team-background-color);
   color: var(--title-text-color);
   transition-property: background-color, color, padding;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.secondary:hover,
-.secondary:focus {
+.button--secondary:hover,
+.button--secondary:focus {
   background-color: var(--accent-color);
   color: var(--hero-headline-color);
   padding: 6px 25px;
@@ -624,16 +623,16 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.box-overlay__image {
+.overlay{
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
-.projects-list__project:hover .overlay {
+.projects-list__project:hover .overlay__box {
   transform: translatey(0);
 }
-.overlay {
+.overlay__box {
   position: absolute;
   top: 0;
   left: 0;
@@ -713,7 +712,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal__button-close {
+.button-close {
   display: flex;
   position: absolute;
 
@@ -731,15 +730,15 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.modal__close-black-icon {
+.button-close__icon {
   width: 11px;
   height: 11px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__button-close:hover .modal__close-black-icon,
-.modal__button-close:focus .modal__close-black-icon {
+.button-close:hover .button-close__icon,
+.button-close:focus .button-close__icon {
   fill: var(--accent-color);
 }
 .modal__form {
@@ -866,14 +865,14 @@ body {
   border-bottom: 1px solid;
   color: var(--accent-color);
 }
-.modal__btn-send:focus,
-.modal__btn-send:hover {
+.modal__button-send:focus,
+.modal__button-send:hover {
   box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.15);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__btn-send {
+.modal__button-send {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;

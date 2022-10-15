@@ -18,7 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -29,7 +30,7 @@
           <a href="./index.html" class="logo link"
             >Web<span class="header-content__logo">Studio</span></a>
           <!--Menu Nav-->
-          <ul class="header-content__menu-nav list">
+          <ul class="menu-nav list">
             <li class="menu-nav__item">
               <a href="./index.html" class="menu-nav__link link">Студія</a>
             </li>
@@ -41,17 +42,17 @@
             </li>
           </ul>
           <!--contacts-->
-          <ul class="header-content__header-contacts list">
+          <ul class="header-contacts list">
             <li class="header-contacts__item">
               <a href="mailto:info@devstudio.com" class="header-contacts__contact link"
-                ><svg class="header-contacts__item-icon" width="16" height="12">
+                ><svg class="header-contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-contacts__item">
               <a href="tel:+380961111111" class="header-contacts__contact link"
-                ><svg class="header-contacts__item-icon" width="10" height="16">
+                ><svg class="header-contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -66,35 +67,35 @@
         <section class="section">
           <!-- filters -->
           <h1 class="section__caption">Портфоліо</h1>
-          <ul class="section__items-button list">
+          <ul class="portfolio-filtres list">
             <li class="item">
-              <button type="button" class="section__button button secondary">Усі</button>
+              <button type="button" class="portfolio-filtres__button button button--secondary">Усі</button>
             </li>
             <li class="item">
-              <button type="button" class="section__button button secondary">Веб-сайти</button>
+              <button type="button" class="portfolio-filtres__button button button--secondary">Веб-сайти</button>
             </li>
             <li class="item">
-              <button type="button" class="section__button button secondary">Додатки</button>
+              <button type="button" class="portfolio-filtres__button button button--secondary">Додатки</button>
             </li>
             <li class="item">
-              <button type="button" class="section__button button secondary">Дизайн</button>
+              <button type="button" class="portfolio-filtres__button button button--secondary">Дизайн</button>
             </li>
             <li class="item">
-              <button type="button" class="section__button button secondary">Маркетинг</button>
+              <button type="button" class="portfolio-filtres__button button button--secondary">Маркетинг</button>
             </li>
           </ul>
           <!-- projects -->
           <ul class="projects-list list">
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/laptop.jpg"
                     alt="ноутбук"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -111,14 +112,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/basketball.jpg"
                     alt="два гравці у баскетбол"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -135,14 +136,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/seafood.jpg"
                     alt="логотип ресторану"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -159,14 +160,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/headphones.jpg"
                     alt="навушники"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -183,14 +184,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/boxes.jpg"
                     alt="коробки"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -207,14 +208,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/monitor.jpg"
                     alt="монитор"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -231,14 +232,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/magazine.jpg"
                     alt="журнал"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -255,14 +256,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/label.jpg"
                     alt="бирка"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -279,14 +280,14 @@
             </li>
             <li class="projects-list__project">
               <a href="" class="projects-list__link link">
-                <div class="box-overlay__image">
+                <div class="overlay">
                   <img
                     src="images/growing.jpg"
                     alt="бізнес вебсайт на ноутбуці"
                     width="370"
                     class="image"
                   />
-                  <div class="overlay">
+                  <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -370,7 +371,7 @@
               placeholder="E-mail"
               id="email"
             />
-            <button type="submit" class="button footer-form__btn primary">
+            <button type="submit" class="button footer-form__button button--primary">
               Підписатися
               <svg class="footer-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
