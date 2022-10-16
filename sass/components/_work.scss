@@ -1,0 +1,24 @@
+.section-work {
+  padding-top: 0;
+}
+.work-thumb {
+  display: flex;
+  position: relative;
+  &__action {
+    display: flex;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: $work-bg-color;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    margin: 0;
+    text-transform: uppercase;
+    color: $hero-headline-color;
+  }
+}

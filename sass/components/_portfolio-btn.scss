@@ -1,0 +1,12 @@
+.portfolio-filtres {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.portfolio-filtres__button {
+  font-weight: $font-wh-medium;
+  font-size: 16px;
+  min-width: 73px;
+  padding: 6px 22px;
+  line-height: 1.6;
+}

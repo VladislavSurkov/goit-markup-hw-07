@@ -1,16 +1,20 @@
 .hero-content {
-    width: 1600px;
-    background-color: $content-background-color;
-    background-image: $hero-linear-gradient;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 200px 0px 200px;
-    margin: auto;
-    text-align: center;
+  width: 1600px;
+  background-color: $content-background-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0px 200px;
+  margin: auto;
+  text-align: center;
 
-
-&__headline {
+  &__headline {
     width: 696px;
     font-weight: $font-wh-black;
     font-size: 44px;
@@ -20,5 +24,17 @@
     margin: auto;
     margin-bottom: 30px;
     color: $hero-headline-color;
-    }
+  }
+}
+
+.button__hero-content {
+  display: inline-block;
+  min-width: 216px;
+  font-weight: $font-wh-bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  margin: auto;
+  padding: 10px 34px;
+  box-shadow: $shadow-btn;
 }
