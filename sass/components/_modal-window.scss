@@ -28,7 +28,6 @@
   }
   &__form-field {
     display: flex;
-    position: relative;
     flex-direction: column;
     margin-bottom: 10px;
   }
@@ -40,9 +39,13 @@
     padding-bottom: 4px;
     color: $modal-label-color;
   }
+  &__input-warp{
+    position: relative;
+  }
 }
 
 .modal__input {
+  width: 100%;
   font-size: 12px;
   padding: 12px 16px 12px 42px;
   color: $modal-label-color;
@@ -60,7 +63,8 @@
 
 .modal__icon {
   position: absolute;
-  bottom: 11px;
+  transform: translateY(50%);
+  // bottom: 11px;
   left: 12px;
   pointer-events: none;
   transition-property: fill;
